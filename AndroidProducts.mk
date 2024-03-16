@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_salami.mk
+    $(LOCAL_DIR)/twrp_waffle.mk
