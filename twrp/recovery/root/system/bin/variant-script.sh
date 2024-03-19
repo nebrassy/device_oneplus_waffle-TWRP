@@ -1,34 +1,34 @@
 #!/system/bin/sh
 # This script is needed to automatically set device props.
 
-#variant=$(getprop ro.boot.prjname)
-#region=$(getprop ro.boot.hw_region_id)
+variant=$(getprop ro.boot.prjname)
+#region=$(getprop ro.boot.product.hardware.sku)
 
-#echo $variant
+echo $variant
 #echo $region
 
 #case $region in
 #    "21")
-#    #China
-#        case $variant in
-#            "22811")
-#            #China
-#                resetprop ro.product.device "OP591BL1"
-#                resetprop ro.product.vendor.device "OP591BL1"
-#                resetprop ro.product.odm.device "OP591BL1"
-#                resetprop ro.product.product.device "OP591BL1"
-#                resetprop ro.product.device "OP591BL1"
-#                resetprop ro.product.system_ext.device "OP591BL1"
-#                resetprop ro.product.product.model "PHB110"
-#                resetprop ro.product.model "PHB110"
-#                resetprop ro.product.system.model "PHB110"
-#                resetprop ro.product.system_ext.model "PHB110"
-#                resetprop ro.product.vendor.model "PHB110"
-#                resetprop ro.product.odm.model "PHB110"
-#                resetprop ro.boot.hardware.revision "CN"
-#                ;;
+    #China
+        case $variant in
+            "22825")
+            #China?
+                resetprop ro.product.device "OP595DL1"
+                resetprop ro.product.vendor.device "OP595DL1"
+                resetprop ro.product.odm.device "OP595DL1"
+                resetprop ro.product.product.device "OP595DL1"
+                resetprop ro.product.device "OP595DL1"
+                resetprop ro.product.system_ext.device "OP595DL1"
+                resetprop ro.product.product.model "CPH2573"
+                resetprop ro.product.model "CPH2573"
+                resetprop ro.product.system.model "CPH2573"
+                resetprop ro.product.system_ext.model "CPH2573"
+                resetprop ro.product.vendor.model "CPH2573"
+                resetprop ro.product.odm.model "CPH2573"
+                resetprop ro.boot.hardware.revision "CN"
+                ;;
 #            "22861")
-            #India
+#           #India
 #                resetprop ro.product.device "OP594DL1"
 #                resetprop ro.product.odm.device "OP594DL1"
 #                resetprop ro.product.product.device "OP594DL1"
@@ -43,23 +43,23 @@
 #                resetprop ro.product.odm.model "CPH2447"
 #                resetprop ro.boot.hardware.revision "IN"
 #                ;;
-#            *)
-#                resetprop ro.product.device "OP591BL1"
-#                resetprop ro.product.vendor.device "OP591BL1"
-#                resetprop ro.product.odm.device "OP591BL1"
-#                resetprop ro.product.product.device "OP591BL1"
-#                resetprop ro.product.device "OP591BL1"
-#                resetprop ro.product.system_ext.device "OP591BL1"
-#                resetprop ro.product.product.model "PHB110"
-#                resetprop ro.product.model "PHB110"
-#                resetprop ro.product.system.model "PHB110"
-#                resetprop ro.product.system_ext.model "PHB110"
-#                resetprop ro.product.vendor.model "PHB110"
-#                resetprop ro.product.odm.model "PHB110"
-#                resetprop ro.boot.hardware.revision "CN"
-#                ;;
-#        esac
-#        ;;
+            *)
+                resetprop ro.product.device "OP595DL1"
+                resetprop ro.product.vendor.device "OP595DL1"
+                resetprop ro.product.odm.device "OP595DL1"
+                resetprop ro.product.product.device "OP595DL1"
+                resetprop ro.product.device "OP595DL1"
+                resetprop ro.product.system_ext.device "OP595DL1"
+                resetprop ro.product.product.model "CPH2573"
+                resetprop ro.product.model "CPH2573"
+                resetprop ro.product.system.model "CPH2573"
+                resetprop ro.product.system_ext.model "CPH2573"
+                resetprop ro.product.vendor.model "CPH2573"
+                resetprop ro.product.odm.model "CPH2573"
+                resetprop ro.boot.hardware.revision "CN"
+                ;;
+        esac
+        ;;
 #    "22")
 #    #Europe
 #            resetprop ro.product.device "OP594DL1"
@@ -97,4 +97,4 @@
 #        ;;
 #esac
 
-#exit 0 
+exit 0
